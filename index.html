@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <title>Javascript Challenge</title>
+  </head>
+  <body>
+    <div class='container text-center mt-5 p-5'>
+<form class="mx-auto d-block col-sm-5"  action="index.html" method="post">
+  <p class='form-group'><input type="text" class='form-control' value="enter text"></p>
+  <p class='form-group'><input type="text" class='form-control' value="enter text2"></p>
+  <p><input type="button" class='btn btn-primary'  value="click to view result"></p>
+</form>
+</div>
+
+  <script type="text/javascript">
+    function getElement(id){
+      return document.querySelector(id);
+    }
+
+
+
+    getElement('p:nth-child(3)>input').addEventListener('click',()=>{
+      let result;
+      result=confirmEnding(getElement('p:nth-child(1)>input'),getElement('p:nth-child(2)>input'));
+      console.log(result);
+    },false)
+  function confirmEnding(firstInput,secondInput){
+
+firstInput=firstInput.value.split(' ');
+
+if(firstInput.length>0){
+firstInput=firstInput[firstInput.length-1];
+   if(firstInput===secondInput.value){
+
+    return true;
+   }else{
+     return false;
+   }
+}
+
+}
+
+
+
+    </script>
+  </body>
+</html>
