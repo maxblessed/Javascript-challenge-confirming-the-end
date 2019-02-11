@@ -7,6 +7,7 @@ in these challenge the function confirmEnding is use to confirm if the
  if it match the function will return true else it will return false
 ---
 ##CONFIRMING END function
+---
 function confirmEnding(firstInput,secondInput){
 
 firstInput=firstInput.value.split(' ');
@@ -23,5 +24,5 @@ firstInput=firstInput[firstInput.length-1];
 
 }
 ---
-###THE SECOND INPUT MUST BE A WORD NOT SENTENCE
+#THE SECOND INPUT MUST BE A WORD NOT SENTENCE
  &copy THOMPSON YEBOAH
