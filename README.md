@@ -25,4 +25,5 @@ firstInput=firstInput[firstInput.length-1];
 }
 ---
 #THE SECOND INPUT MUST BE A WORD NOT SENTENCE
+---
  &copy THOMPSON YEBOAH
