@@ -13,17 +13,23 @@ function confirmEnding(firstInput,secondInput){
 firstInput=firstInput.value.split(' ');
 
 if(firstInput.length>0){
+
+
 firstInput=firstInput[firstInput.length-1];
+
+
  if(firstInput===secondInput.value){
 
   return true;
+  
+  
  }else{
    return false;
  }
 }
 
 }
----
+
 ###THE SECOND INPUT MUST BE A WORD NOT SENTENCE
 ---
  THOMPSON YEBOAH
